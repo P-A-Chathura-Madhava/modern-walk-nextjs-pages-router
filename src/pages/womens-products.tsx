@@ -1,10 +1,8 @@
-import WomensProductsPage from '@/ui-core/templates/pages/WomensProductsPage'
-import React from 'react'
+import WomensProductsPage from "@/ui-core/templates/pages/WomensProductsPage";
+import React from "react";
 
 function womensproducts() {
-  return (
-    <WomensProductsPage />
-  )
+  return <WomensProductsPage />;
 }
 
-export default womensproducts
+export default womensproducts;

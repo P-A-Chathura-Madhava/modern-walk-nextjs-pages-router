@@ -1,10 +1,8 @@
-import LoginPage from '@/ui-core/templates/pages/LoginPage'
-import React from 'react'
+import LoginPage from "@/ui-core/templates/pages/LoginPage";
+import React from "react";
 
 function signin() {
-  return (
-    <LoginPage />
-  )
+  return <LoginPage />;
 }
 
-export default signin
+export default signin;
