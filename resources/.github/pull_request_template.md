@@ -1,38 +1,41 @@
-# <- Add PR title ->
+# Apply NextJS Pages Router and Components
 
-<- Add a description ->
+- Add NextJS Pages Router
+- Add Clerk Authentication
+- Add TanStack Query
+- Add Shadcn Component Library
+- Design Components
+- Develop Features
 
 ## Metadata
 
 | Query                                        | Value                                                                                      |
 | -------------------------------------------- | ------------------------------------------------------------------------------------------ |
-| Destination Branch                           | `<branch name>`                                                                            |
-| Design spec                                  | Figma link                                                                                 |
-| Change type                                  | `Architectural Change / New Feature / Bug Fix / Refactor Existing Code` <Pick one or more> |
-| Should reviewers manually test your changes? | `Yes/No` <Pick one>                                                                        |
-
-## Visual Aid
-
-<- Upload a screenshot or demo clip if necessary ->
+| Destination Branch                           | `build/add-nextjs-pages-router`                                                                            |
+| Design spec                                  | https://www.figma.com/design/Affmf8haXOxIUuoWNnwYqX/Frontend-Technical-Test---Wireapps?node-id=0-1&node-type=canvas&t=h758ASlKFZqjHNXB-0                                                                                 |
+| Change type                                  | `Architectural Change` |
+| Should reviewers manually test your changes? | `No`                                                                        |
 
 ## Additional Information <Delete unnecessary points>
 
 ### How Has This Been Tested?
 
-<- Add something if applies ->
+- I tested this by running in the local machine.
 
 ### Does similar functionality already exist in the codebase? If so, why isn’t this functionality reused?
 
-<- Add something if applies ->
+- Yes, but the new feature increases the performance and upgrade the dependencies to new versions.
 
 ### Files with major changes / what is worth paying more attention to?
 
-<- Add something if applies ->
+- index.ts
+- _app.ts
+- middleware.ts
 
 ## Checklist:
 
-- [ ] My code follows the style guidelines of this project.
-- [ ] I have performed a self-review of my code.
+- [x] My code follows the style guidelines of this project.
+- [x] I have performed a self-review of my code.
 - [ ] I unit tested new methods.
-- [ ] I have commented my code, particularly in hard-to-understand areas.
+- [x] I have commented my code, particularly in hard-to-understand areas.
 - [ ] My changes require changes in documentation and I have made the corresponding changes.

@@ -1,18 +1,13 @@
-// import { useAppDispatch } from "../../../../app/store";
 import { useCartContext } from "@/context/CartContext";
 import { FaShoppingCart } from "react-icons/fa";
-// import { addToCart } from "../../../../feature/cart/cartSlice";
 
 function AddtoCartButton({ ...props }) {
-  const {addItemToCart} = useCartContext();
+  const { addItemToCart } = useCartContext();
   const { product } = props;
-
-  // const dispatch = useAppDispatch();
 
   // Add to Cart
   const addToCartHandler = () => {
     product.qty = 1;
-    // dispatch(addToCart(product));
     addItemToCart(product);
   };
 

@@ -1,17 +1,12 @@
-// import { useAppDispatch } from "../../../../app/store";
 import { useWatchlistContext } from "@/context/WatchlistContext";
 import { FaRegBookmark } from "react-icons/fa6";
-// import { addToWatchlist } from "../../../../feature/watchlist/watchlistSlice";
 
 function AddtoWatchlistButton({ ...props }) {
-  const {addItemWatchlist} = useWatchlistContext();
+  const { addItemWatchlist } = useWatchlistContext();
   const { product } = props;
-
-  // const dispatch = useAppDispatch();
 
   // Add to Watch list
   const addToItemWatchlist = () => {
-    // dispatch(addToWatchlist(product));    
     addItemWatchlist(product);
   };
 

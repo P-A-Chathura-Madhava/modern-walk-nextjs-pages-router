@@ -1,10 +1,8 @@
-import MensProductsPage from '@/ui-core/templates/pages/MensProductsPage'
-import React from 'react'
+import MensProductsPage from "@/ui-core/templates/pages/MensProductsPage";
+import React from "react";
 
 function mensproducts() {
-  return (
-    <MensProductsPage />
-  )
+  return <MensProductsPage />;
 }
 
-export default mensproducts
+export default mensproducts;

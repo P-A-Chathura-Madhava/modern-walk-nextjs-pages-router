@@ -1,13 +1,9 @@
-// import { useAppDispatch } from "../../../../app/store";
 import { useCartContext } from "@/context/CartContext";
 import { Button } from "../../../../components/ui/button";
-// import { removeFromCart } from "../../../../feature/cart/cartSlice";
 
 function CartRemoveItemButton({ ...props }) {
-  const {removeItemFromCart} = useCartContext();
+  const { removeItemFromCart } = useCartContext();
   const { item } = props;
-
-//   const dispatch = useAppDispatch();
 
   const removeItemFromCartHandler = (product: any) => {
     removeItemFromCart(product);

@@ -1,9 +1,5 @@
 import { useEffect } from "react";
-// import { useAppDispatch, useAppSelector } from "../../../app/store";
-// import { calculateTotalAmount } from "../../../feature/cart/cartSlice";
 import CartItem from "@/ui-core/components/molecules/Cart/CartItem";
-// import CartProductsCount from "../../components/atoms/CartDetails/CartProductsCount";
-// import BackToHomeButton from "../../components/atoms/cart/BackToHomeButton";
 import CartFooter from "@/ui-core/layouts/CartFooter";
 import CartHeading from "@/ui-core/components/atoms/Cart/CartHeading";
 import CartTableHeading from "@/ui-core/components/atoms/Cart/CartTableHeading";
@@ -11,23 +7,12 @@ import { useCartContext } from "@/context/CartContext";
 import CartProductsCount from "@/ui-core/components/atoms/Cart/CartProductsCount";
 
 function CartDetailsPage() {
-  const {cart, calculateTotalAmount, totalAmount} = useCartContext();
+  const { cart, calculateTotalAmount, totalAmount } = useCartContext();
   const cartItemCount = cart?.length;
-  
-//   const dispatch = useAppDispatch();
-//   const productState = useAppSelector((state: any) => state?.cart?.cartItems);
 
-//   const cartTotalAmount = useAppSelector(
-//     (state: any) => state?.cart?.cartTotalAmount
-//   );
-
-useEffect(() => {
-  calculateTotalAmount();
-}, []);
-
-//   useEffect(() => {
-//     dispatch(calculateTotalAmount());
-//   }, [productState]);
+  useEffect(() => {
+    calculateTotalAmount();
+  }, []);
 
   return (
     <div className="font-poppins bg-white">
@@ -54,17 +39,16 @@ useEffect(() => {
             <CartHeading {...{ title: "Order Summary" }} />
             <div className="flex justify-between">
               <CartTableHeading {...{ title: "ITEMS" }} />
-              <CartProductsCount {...{ cartItemCount:cartItemCount }} />
+              <CartProductsCount {...{ cartItemCount: cartItemCount }} />
             </div>
             <div className="flex justify-between">
               <h4 className="text-sm font-bold">Total Amount</h4>
               <h4 className="text-sm font-bold text-red-800">
-              {totalAmount.toFixed(2)}
+                {totalAmount.toFixed(2)}
               </h4>
             </div>
           </div>
         </div>
-        {/* <BackToHomeButton /> */}
       </div>
       <CartFooter />
     </div>

@@ -1,16 +1,12 @@
-// import { useAppDispatch } from "../../../../app/store";
 import { useWatchlistContext } from "@/context/WatchlistContext";
 import { CiBookmarkRemove } from "react-icons/ci";
-// import { removeFromWatchlist } from "../../../../feature/watchlist/watchlistSlice";
 
 function RemoveFromWatchlistButton({ ...props }) {
-  const {removeItemFromWatchlist} = useWatchlistContext();
+  const { removeItemFromWatchlist } = useWatchlistContext();
   const { product } = props;
 
-  // const dispatch = useAppDispatch();
-
   const removeFromWatchlist = () => {
-    removeItemFromWatchlist(product)
+    removeItemFromWatchlist(product);
   };
 
   return (

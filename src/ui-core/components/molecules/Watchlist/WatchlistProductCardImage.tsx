@@ -1,6 +1,7 @@
 import CartProductCardHeading from "../../atoms/Cart/CartProductCardHeading";
 import CartProductCardImage from "../../atoms/Cart/CartProductCardImage";
 import RemoveFromWatchlistButton from "../../atoms/Watchlist/RemoveFromWatchlistButton";
+import AddtoCartButton from "../product-card/AddtoCartButton";
 
 function WatchlistProductCardImage({ ...props }) {
   const { id, title, image, price, description, color } = props;
@@ -22,6 +23,7 @@ function WatchlistProductCardImage({ ...props }) {
         <CartProductCardImage {...{ image }} />
         <div className="flex flex-col">
           <RemoveFromWatchlistButton {...{ product: product }} />
+          <AddtoCartButton {... {product: product}} />
         </div>
       </div>
     </div>

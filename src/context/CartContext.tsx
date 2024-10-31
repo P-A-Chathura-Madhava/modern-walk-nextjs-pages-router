@@ -71,12 +71,12 @@ export const CartWrapper = ({ children }: { children: React.ReactNode }) => {
     );
     if (existsItemIndex >= 0) {
       cart[existsItemIndex].qty -= 1;
-      let stringArray = JSON.stringify(cart);
-      localStorage.setItem("cartItems", stringArray);
     }
     if (cart[existsItemIndex].qty === 0) {
       cart.splice(existsItemIndex, 1);
     }
+    let stringArray = JSON.stringify(cart);
+    localStorage.setItem("cartItems", stringArray);
     setCartToState();
     calculateTotalAmount();
   };

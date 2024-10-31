@@ -1,12 +1,9 @@
-// import { useAppDispatch } from "../../../../app/store";
-// import { clearWatchlist } from "../../../../feature/watchlist/watchlistSlice";
 import { MdOutlineDeleteOutline } from "react-icons/md";
 import { Button } from "../../../../components/ui/button";
 import { useWatchlistContext } from "@/context/WatchlistContext";
 
 function ClearWatchlistButton() {
-  const {clearWatchlist} = useWatchlistContext();
-  // const dispatch = useAppDispatch();
+  const { clearWatchlist } = useWatchlistContext();
 
   const clearWatchlistItems = () => {
     clearWatchlist();
